@@ -3,6 +3,8 @@ A repository containing a docker-compose file to start the system.
 
 An .env file is required to start the system.
 
+To start the webclient run "docker-compose up -d webclient".
+To start the app run "docker-compose up -d mobile-app".
 To start all programs run "docker-compose up -d".
 
 To access the app you need to have the expo app installed on your phone.

@@ -1,0 +1,21 @@
+version: "3"
+networks:
+    vteam2:
+        driver: bridge
+services:
+    app:
+        image: vince232/ebikes-mobile-app:latest
+        container_name: "mobile-app"
+        networks:
+            vteam2:
+        restart:
+            "always"
+    webclient:
+        image: annabeerg/docker-reactjs:3.0
+        container_name: "web-client"
+        networks:
+            vteam2:
+        ports:
+            - "3000:3000"
+        restart:
+            "always"

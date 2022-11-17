@@ -1,20 +1,20 @@
 version: "3"
 networks:
-    viai20:
+    vteam2:
         driver: bridge
 services:
     app:
         image: vince232/ebikes-mobile-app:latest
         container_name: "mobile-app"
         networks:
-            viai20:
+            vteam2:
         restart:
             "always"
     webclient:
         image: annabeerg/docker-reactjs:3.0
-        container_name: "webclient"
+        container_name: "web-client"
         networks:
-            viai20:
+            vteam2:
         ports:
             - "3000:3000"
         restart:

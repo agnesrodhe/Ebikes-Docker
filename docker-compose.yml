@@ -21,6 +21,8 @@ services:
             vteam2:
         ports:
             - "3000:3000"
+        volumes:
+            - "./.env/.:/.env"
         restart:
             "always"
     app:

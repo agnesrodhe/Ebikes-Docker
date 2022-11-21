@@ -21,6 +21,8 @@ services:
             vteam2:
         ports:
             - "3000:3000"
+        volumes:
+            - "./.env/.:/.env"
         restart:
             "always"
     app:
@@ -28,5 +30,9 @@ services:
         container_name: "mobile-app"
         networks:
             vteam2:
+        ports:
+            - "3001:3000"
+        volumes:
+            - "./.env/.:/home/.env"
         restart:
             "always"

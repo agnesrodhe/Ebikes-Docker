@@ -15,7 +15,7 @@ services:
         restart:
             "always"
     webclient:
-        image: annabeerg/docker-reactjs:3.0
+        image: annabeerg/docker-reactjs:latest
         container_name: "web-client"
         networks:
             vteam2:

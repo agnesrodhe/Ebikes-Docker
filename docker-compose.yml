@@ -26,12 +26,12 @@ services:
         restart:
             "always"
     app:
-        image: vince232/ebikes-mobile-app:latest
+        image: vince232/mobile-app:latest
         container_name: "mobile-app"
         networks:
             vteam2:
         ports:
-            - "3001:3000"
+            - "3001:80"
         volumes:
             - "./.env/.:/home/.env"
         restart:

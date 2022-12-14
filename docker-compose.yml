@@ -4,7 +4,7 @@ networks:
         driver: bridge
 services:
     server:
-        image: agnesrodhe/vteam-backend:1.0
+        image: mabs21/vteam-backend-new:1.0
         container_name: "server"
         networks:
             vteam2:
@@ -12,8 +12,7 @@ services:
             - "3002:3002"
         volumes:
             - "./.env/.:/backend-api/.env"
-        restart:
-            "always"
+        restart: "always"
     webclient:
         image: annabeerg/docker-reactjs:latest
         container_name: "web-client"
@@ -23,8 +22,7 @@ services:
             - "3000:3000"
         volumes:
             - "./.env/.:/.env"
-        restart:
-            "always"
+        restart: "always"
     app:
         image: vince232/mobile-app:latest
         container_name: "mobile-app"
@@ -34,5 +32,4 @@ services:
             - "3001:80"
         volumes:
             - "./.env/.:/home/.env"
-        restart:
-            "always"
+        restart: "always"

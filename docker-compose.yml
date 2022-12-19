@@ -13,6 +13,14 @@ services:
         volumes:
             - "./.env/.:/backend-api/.env"
         restart: "always"
+    simulator:
+        image: vince232/braintest:latest
+        container_name: "simulator"
+        networks:
+            vteam2:
+        volumes:
+            - "./.env/.:/backend-api/.env"
+        restart: "always"
     webclient:
         image: annabeerg/docker-reactjs:latest
         container_name: "web-client"

@@ -14,7 +14,7 @@ services:
             - "./.env/.:/backend-api/.env"
         restart: "always"
     simulator:
-        image: vince232/braintest:latest
+        image: agnesrodhe/vteam-bike:latest
         container_name: "simulator"
         networks:
             vteam2:

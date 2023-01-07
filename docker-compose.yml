@@ -4,7 +4,7 @@ networks:
         driver: bridge
 services:
     server:
-        image: mabs21/vteam-backend-new:latest
+        image: agnesrodhe/vteam-backend:latest
         container_name: "server"
         networks:
             vteam2:

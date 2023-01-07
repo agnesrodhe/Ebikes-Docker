@@ -14,21 +14,26 @@ Create an .env file in the project folder. The following variables must exist in
 - REACT_APP_GOOGLE_MAPS_API_KEY
 
 Go into the project folder and type the following command to update all containers.
-```bash
-./update_containers.bash
+```
+bash ./update_containers.bash
 ```
 
 To start the system run the following command. 
-```bash
+```
 docker-compose up -d
 ```
 To only start the server run the following command.
-```bash
+```
 docker-compose up -d server
 ```
 
+To start the simulation run the following command. 
+```
+docker-compose run simulator
+```
+
 To shut down all containers run the following command.
-```bash
+```
 docker-compose down
 ```
 

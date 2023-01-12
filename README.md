@@ -36,7 +36,7 @@ docker-compose down
 
 **The WebClient/web application can be accessed at localhost:3001**
 
-**The REST API can be accessed at localhost:3002.**
+**The REST API can be accessed at localhost:3002/v1.**
 
 ## Main-repository for the system
 ### Docker-compose:
